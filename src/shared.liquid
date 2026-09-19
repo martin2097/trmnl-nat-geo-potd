@@ -1,0 +1,13 @@
+{%- capture svg_logo -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#000" stroke-width="3" d="M5 2h14v20H5z"/></svg>
+{%- endcapture -%}
+
+{%- assign hide_title_bar = false -%}
+{%- if trmnl.plugin_settings.custom_fields_values.hide_title_bar == true or trmnl.plugin_settings.custom_fields_values.hide_title_bar == "true" -%}
+  {%- assign hide_title_bar = true -%}
+{%- endif -%}
+
+{%- assign photo_ready = false -%}
+{%- if image_url != blank and title != blank and description != blank -%}
+  {%- assign photo_ready = true -%}
+{%- endif -%}
