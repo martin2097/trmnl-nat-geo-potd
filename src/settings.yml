@@ -47,7 +47,7 @@ custom_fields:
   field_type: boolean
   default: false
   name: Full-screen mode
-  description: Hide the title bar. The photo, title and caption remain visible
+  description: Hide the title bar. The photo, title and caption remain visible.
 name: National Geographic - Photo of the Day
 description: See the world in a new light
 refresh_interval: 360
